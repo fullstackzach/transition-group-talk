@@ -70,18 +70,18 @@ export default class Presentation extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide>
+        <Slide transition={['fade']}>
           <Text textColor='tertiary'>Even still you don't need a Library</Text>
           <WithReactState />
         </Slide>
-        <Slide bgColor='primary' textColor='tertiary'>
+        <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
           <Text textColor='tertiary'>react-transition-group</Text>
           <List>
             <ListItem>Show two components transitioning in and out at the same time</ListItem>
             <ListItem>It's a state machine</ListItem>
           </List>
         </Slide>
-        <Slide bgColor='primary' textColor='tertiary'>
+        <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
           <Text textColor='tertiary'>react-transition-group states</Text>
           <List>
             <ListItem>Appear - First time on a page load</ListItem>
@@ -92,7 +92,7 @@ export default class Presentation extends React.Component {
         <Slide transition={['none']}>
           <Pokemon />
         </Slide>
-        <Slide>
+        <Slide transition={['fade']}>
           <Text textColor='tertiary'>Gotchas</Text>
           <List>
             <ListItem>`position:absolute` your element being transitioned</ListItem>
