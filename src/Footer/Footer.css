@@ -1,0 +1,14 @@
+.footer {
+  font-family: 'Futura';
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  right: 18px;
+  top: 20px;
+}
+
+.icon {
+  margin: 0 2px 0 2px;
+}

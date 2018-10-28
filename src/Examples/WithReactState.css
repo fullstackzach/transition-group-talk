@@ -1,0 +1,11 @@
+.reactExample {
+  height: 100px;
+  width: 100px;
+  margin: 20px auto 20px auto;
+  opacity: 0;
+  background-color: blue;
+  transition: opacity 2s;
+}
+.reactExample.isVisible {
+  opacity: 1;
+}
