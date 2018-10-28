@@ -1,12 +1,13 @@
 // Import React
-import React from 'react'
+import React, { Fragment } from 'react'
 // Import Spectacle Core tags
 import { Deck, Heading, ListItem, List,
-  Slide, Text, CodePane, Appear, Notes, Image, Fit, Fill, Layout, Link, ComponentPlayground
+  Slide, Text, CodePane, Fill, Layout
 } from 'spectacle'
-import { box, reactExampleJSX } from './Examples/CodePanes.js'
+import { box } from './Examples/CodePanes.js'
 import WithReactState from './Examples/WithReactState'
-import Pokemon from './Examples/Pokemon'
+import Pokemon from './Examples/Pokemon/Pokemon'
+import Footer from './Footer/Footer'
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default'
@@ -22,26 +23,29 @@ const theme = createTheme(
     quartenary: '#CECECE' // gray
   },
   {
-    primary: 'Montserrat',
-    secondary: 'Helvetica'
+    primary: 'Helvetica',
+    secondary: 'Montserrat'
   }
 )
 
 export default class Presentation extends React.Component {
   render () {
     return (
+      <Fragment>
+      <Footer />
       <Deck
         transition={['zoom', 'slide']}
         transitionDuration={500}
         theme={theme}>
         <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
-          <Heading caps textColor='white'>React transition group</Heading>
+          <Heading caps textColor='white' textFont='Montserrat'>React transition group</Heading>
         </Slide>
         <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
-          Animations, so what?
+          <Text textColor='tertiary'>Animations, so what?</Text>
           <List>
-            <ListItem>More engaging to your users</ListItem>
-            <ListItem>Your design team will be asking you soon</ListItem>
+            <ListItem>Native mobile apps have set the standard</ListItem> 
+            <ListItem>It's more engaging to your users</ListItem>
+            <ListItem>Your design team will probably be asking you soon</ListItem>
             <ListItem>It's actually fun!</ListItem>
           </List>
         </Slide>
@@ -95,11 +99,13 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']}>
           <Text textColor='tertiary'>Gotchas</Text>
           <List>
-            <ListItem>`position:absolute` your element being transitioned</ListItem>
-            <ListItem>`position:relative` a parent your element</ListItem>
+            <ListItem>Components need to be `position:absolute`</ListItem>
+            <ListItem>Other animations can clash with yours</ListItem>
+            <ListItem>Be sensible</ListItem>
           </List>
         </Slide>
       </Deck>
+      </Fragment>
     )
   }
 }

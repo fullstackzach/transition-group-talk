@@ -1,0 +1,72 @@
+/* Pokecard styles */
+.pokeCard-container {
+  position: relative;
+  height: 500px;
+}
+
+.pokeCard {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  box-shadow: 10px 5px 5px gray;
+  border: 1px blue;
+  border-radius: 20px;
+}
+
+.pokeImg {
+    height: 200px;
+    width: 200px;
+}
+
+.ability-list {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+  list-style: none;
+}
+
+.ability {
+  background-color: lightcoral;
+  margin: 10px;
+  line-height: 30px;
+  padding: 1px 5px 1px 5px;
+  font-size: 25px;
+}
+
+/* APPEAR */
+.transition-appear {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+.transition-appear-active {
+  opacity: 1;
+}
+
+/* ENTERING */
+/* where we're coming from */
+.transition-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 2s, opacity 2s;
+}
+/* where we're going to */
+.transition-enter.transition-enter-active { 
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+/* EXITING */
+.transition-exit {
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0) scale(1,1);
+  transition: transform 2s, opacity 2s;
+}
+.transition-exit.transition-exit-active {
+  opacity: 0;
+  transform: translate3d(100%, -50%, 0) scale(0,0) rotate(600deg);
+}
