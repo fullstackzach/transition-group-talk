@@ -31,3 +31,11 @@ export const reactExampleJSX =
     )
   }
 }`
+
+export const transitionExample = 
+`<Transition
+  in={true}
+  timeout={1000}
+  >
+    {(state) => <Component state={state} />}
+</Transition>`

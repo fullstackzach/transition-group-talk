@@ -2,7 +2,7 @@ import React from 'react'
 
 const PokeCard = ({ name, img, abilities }) =>
   name ? <div className='pokeCard'>
-  <img className='pokeImg'src={img} alt={`image of ${name}`} />
+  <img className='pokeImg'src={img} alt={name} />
   <div>{name}</div>
   <div>
     <ul className='ability-list'>
