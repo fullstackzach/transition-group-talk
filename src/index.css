@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.headshot {
+  width: 400px;
+  height: auto;
+}
+
 .simple {
   height: 100px;
   width: 100px;

@@ -12,5 +12,4 @@ export const mapPokemon = ({name, abilities, height, weight, sprites: { front_de
   img: front_default
 })
 
-export const getOfflinePokemon = (id) => 
-  mapPokemon(OfflinePokemon.find(pokemon => pokemon.id === (id || getRandomNumber(11))))
+export const getInitialPokemon = () => mapPokemon(OfflinePokemon)

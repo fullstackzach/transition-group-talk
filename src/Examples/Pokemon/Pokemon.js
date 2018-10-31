@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import axios from 'axios'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import { mapPokemon, getRandomNumber, getOfflinePokemon } from './utils'
+import { mapPokemon, getRandomNumber, getInitialPokemon } from './utils'
 import PokeCard from './PokeCard'
 import './Pokemon.css'
 
 class Pokemon extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isLoading: false, isAnimating: false, ...getOfflinePokemon(1) }
+    this.state = { isLoading: false, isAnimating: false, ...getInitialPokemon() }
   }
 
   getPokemon () {
