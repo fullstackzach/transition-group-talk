@@ -2,10 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React Transition Group talk by Zach Willard
 
-## Twitter: @fullstackzach_
-## Github: @fullstackzach
+Twitter: [@fullstackzach_](https://twitter.com/fullstackzach_)
+Github: [@fullstackzach](https://github.com/fullstackzach)
 
-[Presentation](https://transition-group-talk-mpacuvhptt.now.sh)
+[Deployed Presentation](https://transition-group-talk-mpacuvhptt.now.sh)
+
+[Link to react-transition-group usage](https://github.com/fullstackzach/transition-group-talk/blob/master/src/Examples/Pokemon/Pokemon.js#L39)
 
 [Usage with React Router example](https://codesandbox.io/s/0pr18j064p) 
 
