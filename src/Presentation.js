@@ -40,7 +40,7 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
           <Heading caps textColor='white' textFont='Montserrat'>React transition group</Heading>
         </Slide>
-        <Slide>
+        <Slide transition={['fade']}>
           <Text textSize='60'>Zach Willard</Text>
           <Layout>
             <Fill>
@@ -110,10 +110,10 @@ export default class Presentation extends React.Component {
         <Slide transition={['none']}>
           <Pokemon />
         </Slide>
-        <Slide>
+        <Slide transition={['fade']}>
           <Text>You can combine with React Router to do full page transitions</Text>
         </Slide>
-        <Slide>
+        <Slide transition={['fade']}>
           <Text textSize='60'>Transition vs CSSTransition</Text>
           <CodePane
             lang='jsx'
