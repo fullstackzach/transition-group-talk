@@ -7,7 +7,7 @@
     "buble": "0.19.8",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "3.0.0",
     "react-transition-group": "2.9.0",
     "spectacle": "5.7.0"
   },
